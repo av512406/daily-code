@@ -25,7 +25,7 @@ export const BlogAppbar = ({ problem, track }: { problem: Problem; track: Track 
           <Link
             prefetch={true}
             href={
-              problemIndex !== 0 ? `/tracks/${track.id}/${track.problems[problemIndex - 1]}` : `/tracks/${track.id}`
+              problemIndex !== 0 ? `/tracks/${track.id}/${track.problems[problemIndex - 1]}` : ``
             }
           >
             <Button variant="outline" className="ml-2 bg-black text-white">
